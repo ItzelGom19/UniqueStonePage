@@ -1,0 +1,48 @@
+a {
+    text-decoration: none;
+    color: black;
+}
+
+body{
+    font-family: sans-serif;
+    margin: 0;
+}
+
+header{
+    display: flex;
+    height: 70px;
+    background-color: #CFD2CF;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+nav a {
+    font-weight: 600;
+    padding-right: 20px;
+}
+nav a:hover {
+    color: white;
+}
+
+.logo{
+    display: flex;
+    padding-left: 10px;
+}
+
+.indexContent{
+    display: flex;
+    height: 600px;
+    align-items: center;
+    text-align: center;
+}
+
+iframe{
+   margin: auto;
+
+}
+
+
+footer{
+    text-align: center;
+}
