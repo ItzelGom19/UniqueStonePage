@@ -1,21 +1,31 @@
+body{
+    font-family: sans-serif;
+    margin: 0;  
+}
+
+/*INDEX*/
+
+.carousel-item{
+    height: 30rem;
+background: #B4CDE6;}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   
+
+}
+
+
+
+
+
 a {
     text-decoration: none;
     color: black;
 }
 
-body{
-    font-family: sans-serif;
-    margin: 0;
-}
-
-header{
-    display: flex;
-    height: 70px;
-    background-color: #CFD2CF;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px;
-}
 
 nav a {
     font-weight: 600;
@@ -51,3 +61,134 @@ footer{
     background-color: #CFD2CF ;
     
 }
+/***************************************** index**************************************/
+.indexContent{
+    background-color: cyan;
+    height: auto;
+    margin: 25px;
+}
+
+
+
+/***************************************** About Us**************************************/
+
+.containerAboutUs{
+    background-color: cornsilk;
+    width: 50vw;
+    margin: 35px auto;
+    text-align: justify;
+    height: auto;
+    padding: 10px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    
+    
+}
+.containerAboutUs figure img{
+    padding: 0px auto;
+    
+    
+}
+
+/*ContactUS */
+.ContactUS{
+    text-align: center;
+}
+
+.contactForm, .info{
+    display: inline-block;
+}
+.contactForm{
+    /* <background-color: blue; */
+    width: 60vw;
+    margin: 0 auto;
+    padding-bottom: 2em;
+    text-align: center;
+}
+.info{
+    /* background-color: red; */
+    width: 60vw;
+    margin: 0 auto;
+    padding-bottom: 2em;
+    text-align: center;
+}
+
+.contactForm p {
+    margin: 1em auto;
+    text-align: center;
+}
+.contact label {
+    display: block;
+    margin: 0.5rem 0;
+  }
+
+.contact textarea{
+  margin: 0;
+  width: 40%;
+  min-height: 2em;
+}
+
+input[type="submit"] {
+    display: block;
+    width: 40%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: #c3c3e9;
+    border-color: white;
+    min-width: 300px;
+  }
+
+/* Gallery */
+.gallery, .index, .ContactUS, .aboutUs{
+    background-color: burlywood;
+}
+
+.galleryTitle{
+    margin-left: 80px;
+    margin-top: 10px;
+}
+
+.containerImg{
+    width: 100%;
+    max-width: 1100px;
+    margin: 60px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 250px;
+    grid-gap: 20px;
+}
+
+.containerImg .boxImg figure{
+    width: 100%;
+    height: 100%;
+
+}
+
+.containerImg .boxImg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.containerImg .boxImg:nth-child(1){
+    grid-column-start:1;
+}
+.containerImg .boxImg:nth-child(2){
+    grid-row-start: 2;
+}
+
+@media screen and (max-width:800px){
+    .containerImg{
+        width: 95%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 10px;
+        grid-template-rows: 200px;
+    }
+    .containerImg .boxImg:nth-child(1){
+        grid-column-start: 1;
+    }
+    
+}
+
+
+
